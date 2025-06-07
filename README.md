@@ -10,13 +10,13 @@
 ### curl -X POST http://localhost:8080/api/products -H "Content-Type: application/json" -d "{\"name\": \"iPhone 15\", \"price\": 7999.00, \"inventory\": 300}"
 
 ## 4.Verify from Rest-api
-### You will see product list by calling 
+### GET: Returns a list of products (id, name, price, inventory) 
     curl -X GET http://localhost:8080/api/products
     Response: [{"id":1,"name":"iPhone 5","price":3999.0,"inventory":100},{"id":2,"name":"iPhone 10","price":5999.0,"inventory":200},{"id":3,"name":"iPhone 15","price":7999.0,"inventory":300}]
-### You can create order by calling 
+### POST: Create a new order 
     curl -X POST http://localhost:8080/api/orders -H "Content-Type: application/json" -H "Accept: application/json" -d "{\"productId\": 2, \"quantity\": 1}"
     Response: {"orderId":"090fd196-0544-46fb-84ea-36d52bf6d35a","totalPrice":5999.0} 
-### You can check order detail by calling
+### GET: Retrieve order details.
     curl -X GET http://localhost:8080/api/orders/090fd196-0544-46fb-84ea-36d52bf6d35a
     Response: {"orderId":"090fd196-0544-46fb-84ea-36d52bf6d35a","product":{"id":2,"name":"iPhone 10","price":5999.0,"inventory":199},"quantity":1,"totalPrice":5999.0}
 
