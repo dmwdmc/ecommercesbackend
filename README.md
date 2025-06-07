@@ -1,7 +1,7 @@
 ## Download code
 
 ## Start e-commerce backend(project are based on Java 17):
-### Use memory DB by default, but you can switch to postgres DB by enabling Postgre in application.properties
+### Use memory DB by default, but you can switch to postgres DB by enabling Postgres in application.properties
 ### [optional]Start Redis server in your local machine, if you want to connect to redis server in another machine, please change configuration in application.properties.
 ### There are 2 ways to start the backend web application
 #### Run com.ecommerce.WebApplication from IDE(e.g IntelliJ idea)
