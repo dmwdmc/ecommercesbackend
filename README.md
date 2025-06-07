@@ -7,10 +7,10 @@
 ### [optional]Start Redis server in your local machine, if you want to connect to redis server in another machine, please change configuration in application.properties.
 ### There are 2 ways to start the backend web application
 #### Run com.ecommerce.WebApplication from IDE(e.g IntelliJ idea)
-#### Run cmd:java -jar ecommercebackend-0.0.1-SNAPSHOT.jar 
+#### Run cmd:java -jar ecommerce[README.md](../ecommercesfront/README.md)backend-0.0.1-SNAPSHOT.jar 
 
 ## Call rest-api to insert products
-### curl -X POST http://localhost:8080/api/products -H "Content-Type: application/json" -d "{\"name\": \"iPhone 5\", \"price\": 3999.00, \"inventory\": 100}"
+### curl -X POST http://localhost:8080/api/products -H "Content-Type: ap[README.md](../ecommercesfront/README.md)plication/json" -d "{\"name\": \"iPhone 5\", \"price\": 3999.00, \"inventory\": 100}"
 ### curl -X POST http://localhost:8080/api/products -H "Content-Type: application/json" -d "{\"name\": \"iPhone 10\", \"price\": 5999.00, \"inventory\": 200}"
 ### curl -X POST http://localhost:8080/api/products -H "Content-Type: application/json" -d "{\"name\": \"iPhone 15\", \"price\": 7999.00, \"inventory\": 300}"
 
