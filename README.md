@@ -1,10 +1,11 @@
 ## Download code
 
-## Start e-commerce backend, there are 2 ways to start the backend web application(project are based on Java 17):
+## Start e-commerce backend(project are based on Java 17):
 ### Use memory DB by default, but you can switch to postgres DB by enabling Postgre in application.properties
 ### [optional]Start Redis server in your local machine, if you want to connect to redis server in another machine, please change configuration in application.properties.
-### Run com.ecommerce.WebApplication from IDE(e.g IntelliJ idea)
-### Run cmd:java -jar ecommercebackend-0.0.1-SNAPSHOT.jar (I uploaded ecommercebackend-0.0.1-SNAPSHOT.jar in project root folder)
+### There are 2 ways to start the backend web application
+#### Run com.ecommerce.WebApplication from IDE(e.g IntelliJ idea)
+#### Run cmd:java -jar ecommercebackend-0.0.1-SNAPSHOT.jar (I uploaded ecommercebackend-0.0.1-SNAPSHOT.jar in project root folder)
 
 ## Call rest-api to insert products
 ### curl -X POST http://localhost:8080/api/products -H "Content-Type: application/json" -d "{\"name\": \"iPhone 5\", \"price\": 3999.00, \"inventory\": 100}"
