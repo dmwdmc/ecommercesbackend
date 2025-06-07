@@ -1,11 +1,13 @@
 ## Download code
+### There is ecommercebackend-0.0.1-SNAPSHOT.jar in project root folder
+### There is ecommerce-demo.mp4 in project root folder
 
 ## Start e-commerce backend(project are based on Java 17):
 ### Use memory DB by default, but you can switch to postgres DB by enabling Postgres in application.properties
 ### [optional]Start Redis server in your local machine, if you want to connect to redis server in another machine, please change configuration in application.properties.
 ### There are 2 ways to start the backend web application
 #### Run com.ecommerce.WebApplication from IDE(e.g IntelliJ idea)
-#### Run cmd:java -jar ecommercebackend-0.0.1-SNAPSHOT.jar (I uploaded ecommercebackend-0.0.1-SNAPSHOT.jar in project root folder)
+#### Run cmd:java -jar ecommercebackend-0.0.1-SNAPSHOT.jar 
 
 ## Call rest-api to insert products
 ### curl -X POST http://localhost:8080/api/products -H "Content-Type: application/json" -d "{\"name\": \"iPhone 5\", \"price\": 3999.00, \"inventory\": 100}"
@@ -23,6 +25,6 @@
     curl -X GET http://localhost:8080/api/orders/090fd196-0544-46fb-84ea-36d52bf6d35a
     Response: {"orderId":"090fd196-0544-46fb-84ea-36d52bf6d35a","product":{"id":2,"name":"iPhone 10","price":5999.0,"inventory":199},"quantity":1,"totalPrice":5999.0}
 
-## I uploaded ecommerce-demo.mp4 in project root folder, you can watch ecommerce-demo.mp4 which I recorded a demo for frontend to backend.
+## you can watch ecommerce-demo.mp4 which I recorded a demo for frontend to backend.
 
 
