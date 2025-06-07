@@ -1,4 +1,4 @@
-## Download code
+## Download code (Java 17 +, Sprint Book 3.0+, Redis, PostgreSQL, OpenAPI)
 ### There is ecommercebackend-0.0.1-SNAPSHOT.jar in project root folder
 ### There is ecommerce-demo.mp4 in project root folder
 
